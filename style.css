@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline');
+@import url('https://fonts.googleapis.com/css?family=Kumar+One');
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+    50% {
+        transform: scale(1.15);
+        box-shadow: 0 1rem 4rem rgba(36, 39, 46, 0.25);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Bungee Inline', cursive;
+    background: #24272e;
+    color: #f5f5f5;
+}
+
+header {
+    padding: .8rem;
+    text-align: center;
+    color: #24272e;
+    background: #f5f5f5;
+}
+
+header p {
+    font-size: 1.7rem;
+}
+
+
+main {
+    margin: 8rem;
+}
+
+.result,
+#action-message {
+    font-size: 1.7rem;
+    color: #f5f5f5;
+    text-align: center;
+}
+
+.score-board {
+    margin: 1rem auto;
+    border: 2px solid whitesmoke;
+    border-radius: .3rem;
+    width: 200px;
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+}
+
+span {
+    font-family: 'Kumar One', cursive;
+}
+
+.badge {
+    background-color: #e2584e;
+    font-size: .9rem;
+    padding: 0 .2rem;
+}
+
+#user-label {
+    position: absolute;
+    top: 25px;
+    left: -25px;
+}
+
+#comp-label {
+    position: absolute;
+    top: 25px;
+    right: -25px;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+}
+
+.choice {
+    margin: .87rem;
+    animation: all .3s;
+}
+
+.choice:hover {
+    outline: none;
+    animation: pulsate 1s infinite;
+    cursor: pointer;
+}
+
+.green-glow {
+    color: #4dcc7d;
+}
+
+.red-glow {
+    color: #fc121b;
+}
+
+.gray-glow {
+    color: #464647;
+}
