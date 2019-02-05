@@ -1,0 +1,15 @@
+{
+    "name": "game",
+    "version": "1.0.0",
+    "description": "Rock Paper Scissors",
+    "main": "index.js",
+    "homepage": "https://bl7.github.io/rps",
+    "scripts": {
+        "deploy": "gh-pages -d dist"
+    },
+    "author": "BL7",
+    "license": "ISC",
+    "devDependencies": {
+        "gh-pages": "^1.2.0"
+    }
+}
