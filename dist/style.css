@@ -100,3 +100,15 @@ span {
     animation: pulsate 1s infinite;
     cursor: pointer;
 }
+
+.green-glow {
+    color: #4dcc7d;
+}
+
+.red-glow {
+    color: #fc121b;
+}
+
+.gray-glow {
+    color: #464647;
+}
